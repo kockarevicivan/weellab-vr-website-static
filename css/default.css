@@ -1,0 +1,584 @@
+
+@font-face{
+	font-family: 'Comfortaa-Bold';
+	src: url('../fonts/Comfortaa-Bold.ttf');
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+	min-width: 370px;
+}
+
+/*#region [Header]*/
+
+header{
+	position: relative;
+	height: 473px;
+	background-color: #E7534F;
+}
+
+header .squaresImage{
+	position: absolute;
+	left: 0;
+	right: auto;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+}
+
+header .centerHelper{
+	overflow: hidden;
+}
+
+header nav{
+	display: block;
+	width: 100%;
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+header nav > a{
+	position: relative;
+	display: inline-block;
+	height: 44px;
+	line-height: 44px;
+	margin-left: 20px;
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	float: right;
+	opacity: 0.9;
+}
+
+header nav > a::after{
+	content: ' ';
+	position: absolute;
+	height: 1px;
+	width: 0;
+	left: 0;
+	right: auto;
+	bottom: 0;
+	top: auto;
+	background: #fff;
+	opacity: 0;
+	-webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+header nav > a:hover{
+	opacity: 1;
+}
+
+header nav > a:hover::after{
+	width: 100%;
+	opacity: 0.6;
+}
+
+header .headerLogo,
+header .headerTextWrapper{
+	position: absolute;
+	display: inline-block;
+}
+
+header .headerLogo{
+	height: 180px;
+	left: 60px;
+}
+
+header h1,
+header p{
+	display: block;
+}
+
+header h1{
+	font-size: 64px;
+	color: #fff;
+	margin: -20px 0 7px 0;
+	font-family: Comfortaa-Bold;
+}
+
+header p{
+	font-size: 15px;
+	color: rgba(255,255,255,0.5);
+	margin-top: 3px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+header p > b{
+	color: rgba(255, 255, 255, 0.8);
+	font-weight: 400;
+}
+
+/*#endregion [Header]*/
+
+/*#region [WhatDoWeDo]*/
+
+#whatDoWeDoSection{
+	background-color: #EDEDED;
+	padding: 128px 0 128px 0;
+}
+
+#whatDoWeDoSection > .centerHelper > h1,
+#whatDoWeDoSection > .centerHelper > h2{
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+#whatDoWeDoSection > .centerHelper > h1{
+	color: rgba( 0, 0, 0, 0.8);
+	font-size: 46px;
+}
+
+#whatDoWeDoSection > .centerHelper > h2{
+	color: #6F6F6F;
+	font-weight: 400;
+	font-size: 18px;
+	letter-spacing: 3px;
+	margin-bottom: 48px;
+}
+
+#whatDoWeDoSection > .centerHelper > p{
+	text-align: center;
+	color: #6F6F6F;
+	line-height: 28px;
+	font-size: 16px;
+	margin-bottom: 48px;
+}
+
+#whatDoWeDoSection > .centerHelper > p > a{
+	color: #6F6F6F;
+	font-weight: 600;
+}
+
+#whatDoWeDoSection > .centerHelper > a{
+	display: block;
+	height: 70px;
+	width: 220px;
+	line-height: 70px;
+	text-align: center;
+	border-radius: 8px;
+	background-color: #E7534F;
+	border: 1px solid #E7534F;
+	color: #fff;
+	text-decoration: none;
+	margin: 0 auto;
+	font-size: 19px;
+	letter-spacing: 3px;
+	outline: none!important;
+	cursor: pointer;
+}
+
+#whatDoWeDoSection > .centerHelper > a:focus{
+	border-color: #90caf9;
+}
+
+#whatToolsDoWeUse{
+	padding: 128px 0 128px 0;
+}
+
+#whatToolsDoWeUse > .centerHelper > h1,
+#whatToolsDoWeUse > .centerHelper > h2{
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+#whatToolsDoWeUse > .centerHelper > h1{
+	color: rgba( 0, 0, 0, 0.8);
+	font-size: 46px;
+}
+
+#whatToolsDoWeUse > .centerHelper > h2{
+	color: #6F6F6F;
+	font-weight: 400;
+	font-size: 18px;
+	letter-spacing: 3px;
+	margin-bottom: 48px;
+}
+
+#whatToolsDoWeUse > .centerHelper > .toolItemWrapper{
+	display: block;
+	width: 100%;
+}
+
+#whatToolsDoWeUse > .centerHelper > .toolItemWrapper > .toolItem{
+	display: inline-block;
+	height: 100%;
+	width: 25%;
+	float: left;
+	border-right: 1px solid rgba( 0, 0, 0, 0.1);
+	color: #6F6F6F;	
+	padding: 0 30px 0 30px;
+}
+
+#whatToolsDoWeUse > .centerHelper > .toolItemWrapper > br{
+	display: none;
+}
+
+#whatToolsDoWeUse > .centerHelper > .toolItemWrapper > .toolItem:last-child{
+	border: none;
+}
+
+#whatToolsDoWeUse > .centerHelper > .toolItemWrapper > .toolItem > i{
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-size: 40px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+#whatToolsDoWeUse > .centerHelper > .toolItemWrapper > .toolItem > h3{
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-size: 15.5px;
+	height: 38px;
+	border-bottom: 1px solid rgba( 0, 0, 0, 0.1);
+	margin-bottom: 20px;
+}
+
+#whatToolsDoWeUse > .centerHelper > .toolItemWrapper > .toolItem > p{
+	text-align: center;
+	font-size: 16px;
+	line-height: 32px;
+	padding-bottom: 20px;
+}
+
+#whatToolsDoWeUse > .centerHelper > .toolItemWrapper > .toolItem > p > a{
+	color: #6F6F6F;
+}
+
+/*#endregion [WhatDoWeDo]*/
+
+#contactUsSection{
+	background-color: #EDEDED;
+	padding: 128px 0 128px 0;
+}
+
+#contactUsSection > form > .right > input[type="text"],
+#contactUsSection > form > .right > textarea{
+	border: 1px solid #D5D5D4;
+	border-radius: 5px;
+	outline: none!important;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 15px;
+	box-shadow: inset 0 0.1em 0.1em 0 rgba(0,0,0,0.05);
+}
+
+#contactUsSection > form > .right > input[type="text"]{
+	height: 40px;
+	width: 49.5%;
+	padding: 0 10px 0 10px;
+}
+
+#contactUsSection > form > .right > textarea{
+	margin-top: 5px;
+	width: 100%!important;
+	min-height: 170px;
+	padding: 14px 10px 14px 10px;
+}
+
+#contactUsSection > form > .right > textarea:focus,
+#contactUsSection > form > .right > input[type="text"]:focus{
+	border-color: #90caf9;
+}
+
+#contactUsSection > form > .left{
+	padding-right: 50px;
+}
+
+#contactUsSection > form > .left > h2{
+	color: rgba( 0, 0, 0, 0.8);
+	font-size: 29px;
+	margin-bottom: 20px;
+}
+
+#contactUsSection > form > .left > h2 > i{
+	font-size: 36px;
+	margin-right: 10px;
+}
+
+#contactUsSection > form > .left > p{
+	color: #6F6F6F;
+	line-height: 32px;
+	margin-bottom: 20px;
+}
+
+#contactUsSection > form > div > button{
+	height: 40px;
+    border-radius: 5px;
+    border: 1px solid #E7534F;
+    cursor: pointer;
+    outline: none;
+    background-color: #E7534F;
+    color: #fff;
+    padding-left: 14px;
+    padding-right: 14px;
+    font-size: 14px;
+	margin-top: 3px;
+}
+
+#contactUsSection > form > div > button:focus{
+	border-color: #90caf9;
+}
+
+#mobileSubmitEmailButton{
+	display: none;
+}
+
+footer{
+	background: #333333;
+	padding: 128px 0 128px 0;
+}
+
+footer > h1{
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-size: 46px;
+    color: rgba(255,255,255,0.9);
+}
+
+footer > p{
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-size: 18px;
+	letter-spacing: 2px;
+	color: #6F6F6F;
+	margin-bottom: 40px;
+}
+
+footer > .socialWrapper{
+	display: flex;
+	width: 140px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+
+footer > .socialWrapper > a{
+	display: inline-block;
+	color: rgba( 255, 255, 255, 0.6);
+	font-size: 36px;
+	margin: 0 auto;
+}
+
+footer > .socialWrapper > a:hover{
+	color: rgba( 255, 255, 255, 0.9);
+}
+
+footer  > h4{
+	font-size: 14px;
+	color: #6F6F6F;
+	font-weight: 600;
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+@media screen and (max-width: 1200px){
+	#whatToolsDoWeUse > .centerHelper > .toolItemWrapper{
+		max-width: 600px;
+		margin: 0 auto;
+	}
+	
+    #whatToolsDoWeUse > .centerHelper > .toolItemWrapper > br{
+		display: block;
+	}
+	
+	#whatToolsDoWeUse > .centerHelper > .toolItemWrapper > .toolItem{
+		float: none;
+		width: 290px;
+	}
+	
+	#whatToolsDoWeUse > .centerHelper > .toolItemWrapper > .toolItem:nth-child(2){
+		border: none;
+	}
+	
+	#contactUsSection > form{
+		max-width: 600px;
+	}
+	
+	#contactUsSection > form > div{
+		display: block;
+		width: 100%;
+		float: none;
+	}
+	
+	#contactUsSection > form > .left{
+		padding-right: 0;
+	}
+	
+	#desktopSubmitEmailButton{
+		display: none;
+	}
+	
+	#mobileSubmitEmailButton{
+		display: block;
+		margin-top: 5px;
+	}
+}
+
+@media screen and (max-width: 1080px){
+	header .headerTextWrapper{
+		left: 475px;
+	}
+	
+	header .headerTextWrapper p{
+		text-align: left;
+	}
+}
+
+@media screen and (max-width: 900px){
+	header > nav{
+		display: none;
+	}
+	
+	header > h1{
+		margin-top: 160px;
+	}
+	
+	header .headerLogo{
+		position: relative;
+		display: block;
+		height: 140px;
+		margin: 0 auto;
+		top: 0;
+		left: 0;
+		transform: translateX(0);
+		margin-top: 40px;
+		margin-bottom: 30px;
+	}
+	
+	header .headerTextWrapper{
+		top: 0;
+		left: 0;
+		transform: translateX(0);
+		position: relative;
+		display: block;
+		width: 100%;
+	}
+	
+	header .headerTextWrapper h1{
+		text-align: center;
+		font-size: 58px;
+	}
+	
+	header .headerTextWrapper p{
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 700px){
+	header nav{
+		display: none;
+	}
+	
+	header .headerLogo{
+		height: 120px;
+		margin-top: 100px;
+	}
+	
+	header .headerTextWrapper h1 {
+		font-size: 46px;
+	}
+	
+	#whatToolsDoWeUse > .centerHelper > .toolItemWrapper > .toolItem{
+		display: block;
+		border: none;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 400px){
+	header .headerTextWrapper h1 {
+		font-size: 40px;
+	}
+	
+	#whatDoWeDoSection > .centerHelper > h1,
+	#whatToolsDoWeUse > .centerHelper > h1,
+	footer > h1{
+		font-size: 38px;
+	}
+	
+	#whatDoWeDoSection > .centerHelper > h2,
+	#whatToolsDoWeUse > .centerHelper > h2,
+	footer > p{
+		font-size: 14px;
+		margin-top: 10px;
+	}
+	
+	#whatDoWeDoSection > .centerHelper > a{
+		width: 170px;
+		font-size: 16px;
+	}
+	
+	#whatToolsDoWeUse > .centerHelper > .toolItemWrapper > .toolItem{
+		width: 100%;
+		padding: 0;
+	}
+	
+	#whatToolsDoWeUse > .centerHelper > .toolItemWrapper > .toolItem > h3{
+		font-size: 14px;
+	}
+	
+	#contactUsSection > form > .left > h2{
+		font-size: 24px;
+	}
+	
+	#contactUsSection > form > .left > h2 > i{
+	    font-size: 23px;
+		margin-right: 8px;
+	}
+	
+	#contactUsSection > form > .left > p{
+		text-align: justify;
+	}
+	
+	#contactUsSection > form > div > button{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 350px){
+	#contactUsSection > form > .right > input[type="text"]{
+		width: 100%;
+		margin-bottom: 5px;
+	}
+	
+	#contactUsSection > form > .right > textarea{
+		margin-top: 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
